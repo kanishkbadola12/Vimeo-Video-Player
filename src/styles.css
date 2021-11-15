@@ -1,2 +1,25 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+.bhfBackground {
+    background-color: #F51143;
+}
+
+.bhfHeadlineFontText {
+    font-family: "BHF Beats Bold",Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 1.50rem;
+    color: white;
+}
+
+.bhfDefaultFontText {
+    font-family: "BHF Beats Bold",Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 1.250rem;
+    color: white;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px;
+}

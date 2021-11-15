@@ -1,0 +1,13 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.footerText {
+    font-family: "BHF Beats Bold",Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    color: white;
+    margin-top: 1%;
+}

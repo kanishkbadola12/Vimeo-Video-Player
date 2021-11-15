@@ -1,3 +1,20 @@
-.searchButton {
-    margin-left: 20px;
+.url {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.relativeMargin {
+    margin: 1rem;
+}
+
+.bhfFontText {
+    font-family: "BHF Beats Bold",Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 1.125rem;
+}
+
+.bhfErrorFontText {
+    font-family: "BHF Beats Bold",Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 1.125rem;
+    color: red;
 }
