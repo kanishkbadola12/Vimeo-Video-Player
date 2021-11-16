@@ -18,6 +18,6 @@ Navigate to the cloned repository. In this case, Navigate to folder VimeoVideoPl
 Run command `npm install` to install the dependencies
 ## Running application
 
-Once the dependencies are installed, use command Run `npm start` to run the application on local server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Once the dependencies are installed, use command `npm start` to run the application on local server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
