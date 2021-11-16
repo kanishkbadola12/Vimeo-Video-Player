@@ -2,10 +2,7 @@
     width: 30%;
     margin: auto;
     display: block;
-}
-
-.relativeMargin {
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .bhfFontText {
@@ -18,3 +15,8 @@
     font-size: 1.125rem;
     color: red;
 }
+
+.centerAlign {
+    margin-top: 5rem;
+}
+

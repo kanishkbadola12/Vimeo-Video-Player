@@ -1,5 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px;
+}
+
 .bhfBackground {
     background-color: #F51143;
 }
@@ -16,10 +24,7 @@
     color: white;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
+.marginTop {
+    margin-top: 2rem;
 }
-body {
-    margin: 0 0 100px;
-}
+

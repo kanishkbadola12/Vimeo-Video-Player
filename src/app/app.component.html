@@ -2,19 +2,23 @@
 <app-header></app-header>
 
 <!-- Body with search functionality, loading screen and video placeholder  -->
-<div class="card-body text-center">
+<div id="content" class="card-body text-center centerAlign">
+    <!-- Search field with headline -->
     <div id="urlTextField">
-        <p class="bhfFontText">Please enter Vimeo Video URL</p>
-        <input class="form-control url bhfFontText" #videoURL placeholder="Enter URL" type="text">
+        <p id="headline" class="bhfFontText">Please enter Vimeo Video URL</p>
+        <input id="videoURL" class="form-control url bhfFontText" #videoURL placeholder="Enter URL" type="text">
     </div>
+    <!-- Placeholder for empty field error -->
     <div id="emptyFieldError" *ngIf="emptyFieldError">
-        <p class="bhfErrorFontText relativeMargin">This field can't be left blank</p>
+        <p id="fieldError" class="bhfErrorFontText">This field can't be left blank</p>
     </div>
+    <!-- Placeholder for HTTP response error -->
     <div id="httpError" *ngIf="httpError && !emptyFieldError">
-        <p class="bhfErrorFontText relativeMargin">{{httpErroInfo}}</p>
+        <p id="httpError" class="bhfErrorFontText">{{httpErroInfo}}</p>
     </div>
+    <!-- Trigger search event -->
     <div id="searchButton">
-        <button class="btn btn-danger relativeMargin bhfFontText" (click)="getVideo(videoURL.value)">Search</button>
+        <button id="search" class="btn btn-danger bhfFontText" (click)="getVideo(videoURL.value)">Search</button>
     </div>
     <!-- Loading screen implementation -->
     <div id="loadingScreen">
@@ -23,8 +27,8 @@
         </ngx-spinner>
     </div>
     <!-- Video placeholder -->
-    <div id="videoPlaceholder">
-        <p class="bhfFontText">{{videoInfo}}</p>
+    <div id="videoPlaceholder" class="marginTop">
+        <p id="videoInfo" class="bhfFontText">{{videoInfo}}</p>
         <div id="videoTemplate" #videoTemplate></div>
     </div>
 </div>

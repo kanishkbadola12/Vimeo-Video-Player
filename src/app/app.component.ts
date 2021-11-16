@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgxSpinnerService } from "ngx-spinner";  
 @Component({
@@ -6,7 +6,7 @@ import { NgxSpinnerService } from "ngx-spinner";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   
   /* View child decorator to inject template reference for iFrame of video */
   @ViewChild('videoTemplate') videoTemplate!: ElementRef;
@@ -23,14 +23,19 @@ export class AppComponent {
     private spinner: NgxSpinnerService    //dependency injection for NgxSpinner
     ) { }
 
+    ngOnInit() {
+      //focus on the textfield as the screen loads
+      document.getElementById("videoURL")?.focus();
+    }
+
   /**
   * fetch video from Vimeo API using video URL
   * @param {String} videoURL
   */
   public getVideo(videoURL: string) {
-    let oEmbedURL = "https://vimeo.com/api/oembed.json?url=" + videoURL + "&width=600&height=300";
+    let oEmbedURL = "https://vimeo.com/api/oembed.json?url=" + videoURL + "&width=900&height=300";
     if (videoURL !== '') {
-      //disable errors
+      //disable inline errors
       this.emptyFieldError = false;
       this.httpError = false;
       this.spinner.show();      //show spinner untill data is not fetched

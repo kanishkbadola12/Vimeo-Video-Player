@@ -1,27 +1,23 @@
-# VideoPlayer
+# Vimeo Video Player developed by Kanishk Badola
+## Cloning repository from Git to local folder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Navigate to your local directory where you want to clone/download the application.
 
-## Development server
+Clone the source code from Vimeo VideoPlayer public repository. Link for the repo is `https://github.com/kanishkbadola12/VimeoVideoPlayer/`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Find "Code" button dropdown and select HTTPS option from the dialog box. Copy the link to clipboard.
 
-## Code scaffolding
+Open Git Bash/IDE/Terminal and clone the repository using the command: git clone "COPIED_LINK"
+For this app you can use the following command: "git clone https://github.com/kanishkbadola12/VimeoVideoPlayer.git"
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Verify if the repository is cloned at the directory of your choosing.
 
-## Build
+## Installing the dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Navigate to the cloned repository. In this case, Navigate to folder VimeoVideoPlayer.
+Run command "npm install" to install the dependencies
+## Running application
 
-## Running unit tests
+Once the dependencies are installed, use command Run `npm start` to run the application on local server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
