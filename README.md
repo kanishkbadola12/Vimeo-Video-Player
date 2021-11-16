@@ -1,4 +1,4 @@
-# Vimeo Video Player developed by Kanishk Badola
+# Vimeo Video Player
 ## Cloning repository from Git to local folder
 
 Navigate to your local directory where you want to clone/download the application.
