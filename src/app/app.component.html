@@ -1,25 +1,32 @@
 <!-- Header component -->
 <app-header></app-header>
 
-<!-- Body with search functionality and video placeholder  -->
+<!-- Body with search functionality, loading screen and video placeholder  -->
 <div class="card-body text-center">
-    <div id="url">
+    <div id="urlTextField">
         <p class="bhfFontText">Please enter Vimeo Video URL</p>
         <input class="form-control url bhfFontText" #videoURL placeholder="Enter URL" type="text">
     </div>
-    <div id="inlineError" *ngIf="showError">
+    <div id="emptyFieldError" *ngIf="emptyFieldError">
         <p class="bhfErrorFontText relativeMargin">This field can't be left blank</p>
+    </div>
+    <div id="httpError" *ngIf="httpError && !emptyFieldError">
+        <p class="bhfErrorFontText relativeMargin">{{httpErroInfo}}</p>
     </div>
     <div id="searchButton">
         <button class="btn btn-danger relativeMargin bhfFontText" (click)="getVideo(videoURL.value)">Search</button>
     </div>
     <!-- Loading screen implementation -->
-    <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-scale-multiple">
-        <p style="color: white">Please Wait...</p>  
-    </ngx-spinner>
+    <div id="loadingScreen">
+        <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="medium" color="#fff" type="ball-scale-multiple">
+            <p style="color: white">Please Wait...</p>  
+        </ngx-spinner>
+    </div>
     <!-- Video placeholder -->
-    <p class="bhfFontText">{{videoInfo}}</p>
-    <div id="videoTemplate" #videoTemplate></div>
+    <div id="videoPlaceholder">
+        <p class="bhfFontText">{{videoInfo}}</p>
+        <div id="videoTemplate" #videoTemplate></div>
+    </div>
 </div>
 
 <!-- Footer component -->
